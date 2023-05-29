@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Consulta del clima</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    	body {
+    		background-color: #f7f7f7;
+    	}
+    	h1, h2 {
+    		color: #34495e;
+    	}
+    	label {
+    		color: #2c3e50;
+    	}
+    	.btn-primary {
+    		background-color: #2980b9;
+    		border-color: #2980b9;
+    	}
+    	.btn-primary:hover {
+    		background-color: #3498db;
+    		border-color: #3498db;
+    	}
+    </style>
+</head>
+<body>
+
+	<div class="container mt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<h1 class="text-center mb-4">Consulta del clima</h1>
+				<div class="form-group">
+					<label for="city">Ingresa el nombre de una ciudad:</label>
+					<input type="text" id="city" class="form-control">
+				</div>
+				<button type="button" onclick="getWeather()" class="btn btn-primary btn-block mb-4">Consultar clima</button>
+				<div id="weather" class="text-center"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="tiempo.js"></script>
+
+</body>
+</html>
